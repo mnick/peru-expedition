@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne & Max in Peru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        .map-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+        .map-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+        .img-card { transition: transform 0.2s ease; }
+        .img-card:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header class="bg-white py-16 px-6 sm:px-12 shadow-sm border-b border-slate-200">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-slate-900">Anne & Max in Peru</h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl">Eine kleine 14-tägige Anden-Expedition mit Badespaß, Vegetarischer Gastronomie, Wüstenerkundungen und Bucket-List Archäologie</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-6 sm:px-12 py-12">
+
+        <!-- Map Section -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold border-b border-slate-200 pb-2 mb-6">Expeditionsroute</h2>
+            <div class="map-container rounded-xl shadow-lg overflow-hidden border border-slate-200">
+                <!-- Google Maps Directions Embed -->
+                <iframe 
+                    src="https://maps.google.com/maps?saddr=Lima,+Peru&daddr=Paracas,+Peru+to:Nazca,+Peru+to:Urubamba,+Peru+to:Machu+Picchu,+Peru+to:Cusco,+Peru&output=embed" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Phase 1 -->
+        <section class="mb-20">
+            <div class="flex items-baseline space-x-4 mb-6 border-b border-slate-200 pb-2">
+                <h2 class="text-3xl font-bold text-slate-900">Phase 1: Gastronomie in Lima</h2>
+                <span class="text-slate-500 font-semibold uppercase tracking-wider text-sm">2 Tage</span>
+            </div>
+            <p class="text-lg mb-8 text-slate-700">Um uns von den Citi-Field Veggie Dogs zu erholen, geht es zuerst in das Restaurant Central in Lima, welches 2023 zum besten Restaurant der Welt gewählt wurde. Central bietet ein nach Höhenlagen gestaffeltes Degustationsmenü, das Perus vielfältige Ökosysteme von maritimen Umgebungen bis zu den hohen Anden umfasst (inkl. vegetarischer Optionen). </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Point 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://feastio.com/wp-content/uploads/2022/10/Central-dining-room.jpg" alt="Central Restaurant Speisesaal" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Central Restaurant</h3>
+                            <p class="text-slate-600 mb-4">Küchenchef Virgilio Martínez zählt zu den weltbesten und präsentiert ein Degustationsmenü, das nach den Höhenlagen der Ökosysteme ausgerichtet ist.</p>
+                        </div>
+                        <a href="https://centralrestaurante.com.pe/en/" target="_blank" class="inline-flex items-center font-semibold text-indigo-600 hover:text-indigo-800">Website &rarr;</a>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://www.iletours.com/wp-content/uploads/2018/02/marriot.jpg" alt="JW Marriott Hotel Lima" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">JW Marriott Hotel Lima</h3>
+                            <p class="text-slate-600 mb-4">Hotel mit Blick auf die Klippen des Pazifiks im Viertel Miraflores, das erstklassige Meerblicke bietet.</p>
+                        </div>
+                        <a href="https://www.marriott.com/en-us/hotels/limdt-jw-marriott-hotel-lima/overview/" target="_blank" class="inline-flex items-center font-semibold text-indigo-600 hover:text-indigo-800">Website &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 2 -->
+        <section class="mb-20">
+            <div class="flex items-baseline space-x-4 mb-6 border-b border-slate-200 pb-2">
+                <h2 class="text-3xl font-bold text-slate-900">Phase 2: Küstenspaß in Paracas</h2>
+                <span class="text-slate-500 font-semibold uppercase tracking-wider text-sm">5 Tage</span>
+            </div>
+            <p class="text-lg mb-8 text-slate-700">Um das Food-Koma auszukurieren, geht es zum Entspannen erstmal an den Beach. Mit Startpunkt Strandresort können wir Küstenexpeditionen starten, inklusive der Nasca-Linien und den "peruanischen Galapagos-Inseln".</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Point 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://cache.marriott.com/is/image/marriotts7prod/lc-piolc-piolc-21-10521:Feature-Hor?wid=1920&fit=constrain" alt="Hotel Paracas Resort" class="w-full h-48 object-cover">
+                    <div class="p-5 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Hotel Paracas</h3>
+                            <p class="text-sm text-slate-600 mb-4">Ein Luxury Collection Resort mit eigenem Pier und Infinity-Pools. Startpunkt für unsere Ausflüge sowie beach beach beach.</p>
+                        </div>
+                        <a href="https://www.marriott.com/en-us/hotels/piolc-hotel-paracas-a-luxury-collection-resort-paracas/overview/" target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-800">Website &rarr;</a>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://www.machutravelperu.com/blog/wp-content/uploads/2021/04/nazca-lines-theories-monkey-822x463.jpg" alt="Nazca Lines Monkey Geoglyph" class="w-full h-48 object-cover">
+                    <div class="p-5 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Rundflug über die Nazca-Linien</h3>
+                            <p class="text-sm text-slate-600 mb-4">Charterflug über das UNESCO Weltkultur-Erbe, um die massiven geometrischen Geoglyphen zu erforschen.</p>
+                        </div>
+                        <a href="https://nazcalinesflights.com/" target="_blank" class="inline-flex items-center text-sm font-semibold text-indigo-600 hover:text-indigo-800">Website &rarr;</a>
+                    </div>
+                </div>
+                <!-- Point 3 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://www.peru-explorer.com/wp-content/uploads/ballestas-islands.jpg" alt="Sea Lions at Ballestas Islands" class="w-full h-48 object-cover">
+                    <div class="p-5 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">Ballestas-Inseln ("Peruvian Galapagos")</h3>
+                            <p class="text-sm text-slate-600 mb-4">Bootsfahrt zu einem artenreichen Meeres-Ökosystem, das von Seelöwen und Pinguinen bewohnt wird.</p>
+                        </div>
+                        <a class="inline-flex items-center text-sm font-semibold text-indigo-600" href="https://www.paracasperu.com/ballestas-islands/">Website &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 3 -->
+        <section class="mb-20">
+            <div class="flex items-baseline space-x-4 mb-6 border-b border-slate-200 pb-2">
+                <h2 class="text-3xl font-bold text-slate-900">Phase 3: Übergang in die Anden</h2>
+                <span class="text-slate-500 font-semibold uppercase tracking-wider text-sm">2 Tage</span>
+            </div>
+            <p class="text-lg mb-8 text-slate-700">Um nach Machu Picchu zu kommen müssen wir vom Ozean zu den Anden. Wir fliegen von Lima nach Cuzco und steigen sofort in die niedrigere Lage des Heiligen Tals ab, um die Akklimatisierung an die Höhe zu erleichtern.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Point 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://secure.s.forbestravelguide.com/img/properties/tambo-del-inka-a-luxury-collection-resort-spa/tambo-del-inka-a-luxury-collection-resort-spa-exterior.jpg" alt="Tambo del Inka Resort" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Tambo del Inka, Urubamba</h3>
+                            <p class="text-slate-600 mb-4">Ein Luxury Collection Resort & Spa im Heiligen Tal mit eigenem Bahnhof für eine direkte Fahrt nach Machu Picchu.</p>
+                        </div>
+                        <a href="https://www.marriott.com/en-us/hotels/cuzak-tambo-del-inka-a-luxury-collection-resort-and-spa-valle-sagrado/overview/" target="_blank" class="inline-flex items-center font-semibold text-indigo-600 hover:text-indigo-800">Website &rarr;</a>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Peru_-_Sacred_Valley_%26_Incan_Ruins_279_-_Moray_%288118174960%29.jpg/1280px-Peru_-_Sacred_Valley_%26_Incan_Ruins_279_-_Moray_%288118174960%29.jpg" alt="Moray Incan Terraces" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Moray-Terrassen</h3>
+                            <p class="text-slate-600 mb-4">Komplexe konzentrischen Terrassensysteme, die als landwirtschaftliches Laboratorium der Inka dienten.</p>
+                        </div>
+                        <a class="inline-flex items-center font-semibold text-indigo-600" href="https://de.wikipedia.org/wiki/Moray_(Peru)" target="_blank">Wikipedia &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 4 -->
+        <section class="mb-20">
+            <div class="flex items-baseline space-x-4 mb-6 border-b border-slate-200 pb-2">
+                <h2 class="text-3xl font-bold text-slate-900">Phase 4: Machu Picchu</h2>
+                <span class="text-slate-500 font-semibold uppercase tracking-wider text-sm">2 Tage</span>
+            </div>
+            <p class="text-lg mb-8 text-slate-700">Nun zum Höhepunkt (literally)! Um Machu Picchu ungestört zu erleben, verbringen wir eine Nacht am Rande des antiken Heiligtums. Von dort können wir die Zitadelle erkunden nachdem die Tagesausflügler abgereist sind, gefolgt von einer Erkundung bei Sonnenaufgang.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Point 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9398252%2Fcusco-valley-peru_belmond-sanctuary-lodge_exterior.jpg&width=1081.5" alt="Belmond Sanctuary Lodge" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Belmond Sanctuary Lodge</h3>
+                            <p class="text-slate-600 mb-4">Das einzige Hotel, das sich direkt neben den Eingangstoren der Zitadelle befindet und exklusiven Zugang bei Morgen- oder Abenddämmerung ohne Verzögerungen durch Bustransfers bietet.</p>
+                        </div>
+                        <a href="https://www.belmond.com/hotels/south-america/peru/machu-picchu/belmond-sanctuary-lodge/" target="_blank" class="inline-flex items-center font-semibold text-indigo-600 hover:text-indigo-800">Lodge ansehen &rarr;</a>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://www.peruforless.com/_next/image?url=https%3A%2F%2Fwww.peruforless.com%2Fimages%2Fmachu-picchu-ruins.jpg&w=3840&q=75" alt="Machu Picchu Ruins" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Machu Picchu</h3>
+                            <p class="text-slate-600 mb-4">Wir besuchen das UNESCO-Weltkulturerbe und erkunden Sonnentempel, die landwirtschaftlichen Terrassen und die komplexen Trockenmauerstrukturen.</p>
+                        </div>
+                        <span class="inline-flex items-center font-semibold text-slate-400">Historisches Heiligtum</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 5 -->
+        <section class="mb-10">
+            <div class="flex items-baseline space-x-4 mb-6 border-b border-slate-200 pb-2">
+                <h2 class="text-3xl font-bold text-slate-900">Phase 5: Kaiserliche Hauptstadt & Rückkehr</h2>
+                <span class="text-slate-500 font-semibold uppercase tracking-wider text-sm">3 Tage</span>
+            </div>
+            <p class="text-lg mb-8 text-slate-700">Zum Abschluss unserer kleinen Expedition erkunden wir die ehemalige Inka-Hauptstadt und die historische Steinfundamente, die von kolonialer Architektur überlagert sind, bevor wir unseren Rückflug über Lima antreten.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Point 1 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://www.staygrand.com/wp-content/uploads/2017/02/58433e0c2fb0e37429f3f46136eed51d1e72e0a0-1024x684.jpg" alt="JW Marriott El Convento Cusco" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">JW Marriott El Convento Cusco</h3>
+                            <p class="text-slate-600 mb-4">Ein restauriertes Kloster aus dem 16. Jahrhundert, das auf Inka-Ruinen erbaut wurde. Die Gästezimmer sind mit sauerstoffangereicherten Systemen ausgestattet, um die Akklimatisierung zu unterstützen.</p>
+                        </div>
+                        <a href="https://www.marriott.com/en-us/hotels/cuzmc-jw-marriott-el-convento-cusco/overview/" target="_blank" class="inline-flex items-center font-semibold text-indigo-600 hover:text-indigo-800">Website &rarr;</a>
+                    </div>
+                </div>
+                <!-- Point 2 -->
+                <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden img-card flex flex-col">
+                    <img src="https://freewalkingtoursperu.com/wp-content/uploads/2024/06/12-calles-famosas-del-cusco-con-mucha-historia_12.webp" alt="Cusco Architecture" class="w-full h-64 object-cover">
+                    <div class="p-6 flex-grow flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Historisches Zentrum von Cusco</h3>
+                            <p class="text-slate-600 mb-4">Zum Abschluss erkunden schlendern wir durch das Nebeneinander von Cusco, wo spanische Kolonialarchitektur direkt kaiserlichen Inka-Fundamenten erbaut wurde, wie zum Beispiel der Sonnentempel Qorikancha.</p>
+                        </div>
+                        <span class="inline-flex items-center font-semibold text-slate-400">Stadterkundung</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
